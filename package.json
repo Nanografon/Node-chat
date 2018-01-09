@@ -1,0 +1,31 @@
+{
+  "name": "chat-nodejs",
+  "version": "1.0.0",
+  "description": "Demonstrative chat on NodeJS and SocketIO",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nanografon/Node-chat.git"
+  },
+  "keywords": [
+    "chat",
+    "Node.js",
+    "socket.io"
+  ],
+  "author": "Vasiliy Serpokryl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nanografon/Node-chat/issues"
+  },
+  "homepage": "https://github.com/Nanografon/Node-chat#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.9",
+    "socket.io": "^2.0.4"
+  }
+}

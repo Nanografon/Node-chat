@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat</title>
+
+  <link rel="icon" type="image/png" href="/favicon.png"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.3/css/all.css">
+</head>
+<body>
+  <div class="container">
+    <div class="section">
+      <div class="field is-horizontal">
+        <div class="field-label is-normal">
+          <label class="label">Имя пользователя:</label>
+        </div>
+        <div class="field-body">
+          <div class="field">
+            <div class="control has-icons-left">
+              <input class="input" type="text" id="username" placeholder="Введите имя пользователя" value="">
+              <span class="icon is-small is-left">
+                <i class="fa fa-user"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="field is-horizontal">
+        <div class="field-label is-normal">
+          <label class="label">Сообщение:</label>
+        </div>
+        <div class="field-body">
+          <div class="field has-addons">
+            <div class="control has-icons-left is-expanded">
+              <input class="input" type="text" id="message" placeholder="Введите сообщение">
+              <span class="icon is-small is-left">
+                <i class="fa fa-envelope"></i>
+              </span>
+            </div>
+            <div class="control">
+              <a class="button is-info" id="submitBtn">
+                Отправить
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4>Пользователи в чате:</h4>
+      <div class="tags" id="users"></div>
+
+      <div id="messages"></div>
+    </div>
+  </div>
+
+  <script src="/js/socket.io.js"></script>
+  <script src="/js/chat.js"></script>
+</body>
+</html>
